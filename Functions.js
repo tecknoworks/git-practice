@@ -10,6 +10,7 @@ app.get('/user',function (req,res)
         }
     })
     res.send(allUsers)
+	//bug fixed
 })
 
 app.post('/add/user', (req, res) => {
