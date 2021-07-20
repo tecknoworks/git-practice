@@ -20,4 +20,5 @@ app.post('/add/user', (req, res) => {
     user.push(newUser)
     console.log(JSON.stringify(req.body))
     res.send(newUser)
+	//bug solved
 })
