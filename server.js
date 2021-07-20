@@ -1,3 +1,3 @@
 function write() {
-	console.log("Hello")
+	console.log("Hello TKW")
 }
