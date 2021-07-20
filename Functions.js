@@ -21,3 +21,10 @@ app.post('/add/user', (req, res) => {
     console.log(JSON.stringify(req.body))
     res.send(newUser)
 })
+
+app.delete('/delete/user/:id', (req, res) => {
+    var idreq=req.params.id
+    var removeIndex = user.findIndex(user => user.id==idreq)
+    user.splice( removeIndex, 1 );
+    res.send(user)
+ })
