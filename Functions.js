@@ -31,3 +31,11 @@ app.delete('/delete/user/:id', (req, res) => {
     res.send(user)
 	//bug fixed
  })
+
+app.post('/add/project', (req, res) => {
+    const newId = projects.map(u => u.id).reduce(function(a, b) { return Math.max(a, b) }) + 1;
+    let newProject = req.body
+    newProject.id = newId
+    projects.push(newProject)
+    res.send(newProject)
+})
