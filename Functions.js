@@ -28,4 +28,5 @@ app.delete('/delete/user/:id', (req, res) => {
     var removeIndex = user.findIndex(user => user.id==idreq)
     user.splice( removeIndex, 1 );
     res.send(user)
+	//bug fixed
  })
