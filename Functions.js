@@ -37,6 +37,5 @@ app.post('/add/project', (req, res) => {
     let newProject = req.body
     newProject.id = newId
     projects.push(newProject)
-    console.log(JSON.stringify(req.body))
     res.send(newProject)
 })
