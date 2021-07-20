@@ -1,3 +1,3 @@
 function write() {
-	console.log("Hello Damaris")
+	console.log("Hello Catalina,Hello Damaris")
 }
